@@ -1,0 +1,147 @@
+\documentclass[11pt]{article}
+
+\usepackage{url}
+
+%%  Dimensions
+%%
+\topmargin             0in
+\headheight            0in
+\headsep               0in
+\textheight          8.5in
+\textwidth           6.5in
+\evensidemargin        0in
+\oddsidemargin         0in
+
+%%  Definitions
+%%
+\renewcommand{\baselinestretch}{1.1}
+\pagestyle{plain}
+
+\begin{document}
+
+\begin{center}
+{\bfseries \LARGE Task 1 -- Necessary Software\\[8mm]}
+\end{center}
+
+
+\section{The C++ Programming Language}
+
+C++ is a popular, general-purpose programming language.
+It is often considered an intermediate-level language because it admits both high-level and low-level paradigms.
+C++ adds object-oriented programming features to C.
+It supports classes and their main attributes: abstraction, encapsulation, inheritance, and polymorphism.
+Technically, C++ incorporates the C standard library, with slight modifications.
+Pertinent documentation about this language can be found on the C++ resources network.
+\begin{itemize}
+\item \url{http://www.cplusplus.com/}
+\end{itemize}
+Many compilers are available for C++, including Visual Studio (Microsoft) and GCC (GNU Project).
+The C/C++ syntax forms the basis for software development on several microcontroller platforms.
+Texas A\&M University provides access to several books on C++ programming.
+For example, \emph{The C++ programming language} is accessible online through campus.
+\begin{itemize}
+\item \url{http://proquest.safaribooksonline.com/9780133522884}
+\end{itemize}
+To build and debug a C++ projects, a toolchain is required.
+Each platform that runs a C/C++ Development Tools (CDT) requires a unique installation process.
+
+
+\subsection*{Action Items}
+
+\begin{itemize}
+\item \textbf{Download and Install:} A C++ Toolchain.
+\begin{itemize}
+\item \textbf{Windows Option 1:} Microsoft \texttt{Visual Studio}, which is available for free to ECE students through Microsoft DreamSpark.\\
+\url{https://www.dreamspark.com/Institution/Access.aspx}
+\item \textbf{Windows Option 2:} MinGW using the \texttt{mingw-get-inst} package and default directory.\\
+\url{http://sourceforge.net/projects/mingw/files/}
+\item \textbf{MacOS X:} Apple GNU toolchain included in the Xcode IDE.\\
+\url{http://developer.apple.com}
+\item \textbf{GNU/Linux:} Most GNU/Linux distributions provide the GNU toolchain.\\
+\url{https://gcc.gnu.org}
+\end{itemize}
+\item \textbf{Create, Build, and Run:} HelloWorld.
+\end{itemize}
+
+
+\newpage
+\section{CMake}
+
+CMake is a cross-platform, open-source build system.
+It is a family of tools designed to build, test and package software.
+CMake is used to control the software compilation process using simple platform and compiler independent configuration files.
+CMake generates native makefiles and workspaces that can be used in various compiler environments, and supports cross-platform development.
+\begin{itemize}
+\item \url{http://www.cmake.org/}
+\end{itemize}
+
+
+\subsection*{Action Items}
+
+\begin{itemize}
+\item \textbf{Read:} The CMake tutorial. \\
+\url{http://cmake.org/cmake/help/cmake_tutorial.html}
+\item \textbf{Peruse:} The Introduction to CMake Course. \\
+\url{http://cmake.org/cmake/resources/webinars.html}
+\item \textbf{Download and Install:} CMake. \\
+\url{http://cmake.org/cmake/resources/software.html}
+\item \textbf{Create, Build, and Run:} HelloWorld using CMake.
+\end{itemize}
+
+
+\subsection*{Structure}
+
+Version control systems form a great paradigm to facilitate collaborative projects.
+Still, one of the many difficulties encountered in large projects is the fact that most programmers have a strong preference for a programming style.
+Following a few elementary guidelines can greatly simplify team work.
+A short list of generally applicable rules can be found below.
+\begin{itemize}
+\item \textbf{Main:} Only create one \texttt{main()} class to avoid confusing automated builders.
+This will prevent the \texttt{duplicate symbol} error that may otherwise occur at \texttt{link} time.
+\item \textbf{Structure:} Declare your classes in \texttt{header} files and define your classes in \texttt{source} files in a structured manner.
+\item \textbf{Hierarchy:} For simple projects, place all your files in a same directory, e.g., \texttt{src}.
+\item \textbf{Documentation:} Annotate your code appropriately, and remember that comments should be decipherable by someone else than the original programmer.
+\item \textbf{Libraries:} Only include cross-platform libraries for greater compatibility, e.g., \texttt{Boost}.
+\end{itemize}
+
+
+\newpage
+\section{Integrated Development Environments (optional)}
+
+An integrated development environment (IDE) is a software application that provides comprehensive tools for software development.
+An IDE often provides a source code editor, build automation tools, and a debugger.
+A major benefit of IDEs is a significant reduction in establishing proper build configurations.
+
+
+\subsection*{The Eclipse Foundation}
+
+Eclipse is a community for individuals and organizations who wish to collaborate on commercially-friendly open source software.
+The Eclipse IDE can be used to develop applications in Java, C++, Python and other languages.
+Eclipse is a powerful platform, and it can be used to program C++.
+The standard C/C++ Development Tools (CDT) in Eclipse supports integration with the GNU toolchain, which includes the \texttt{make}, \texttt{gcc}, and \texttt{gdb} utilities.
+
+\subsection*{Alternate Programming Environments}
+
+There are many alternate IDEs for C++ development.
+This includes Microsoft Visual Studio, Apple Xcode, NetBeans.
+In addition, code can be written in code editors such as Notepad++, TextWrangler, GNU Emacs, and Vim.
+
+\subsection*{Action Items}
+
+\begin{itemize}
+\item \textbf{Read:} About the Eclipse Foundation. \\
+\url{http://www.eclipse.org/org/}
+\item \textbf{Read:} C/C++ Development User Guide. \\
+\url{http://help.eclipse.org/luna/index.jsp}
+\item \textbf{Download and Install:} A Java Runtime Environment (JRE). \\
+%This is needed to run Eclipse IDE. \\
+\url{http://www.oracle.com/technetwork/java/javase/downloads/index.html}
+\item Option~1 -- \textbf{Download and Install:} Eclipse IDE for C/C++ Developers (latest release). \\
+\url{http://www.eclipse.org/downloads/}
+\item Option~2 -- \textbf{Download and Install:} Eclipse Standard (latest release). \\
+Under \texttt{Install New Software > Programming Languages}, select the \texttt{C/C++ Development Tools} and \texttt{C/C++ Development Tools SDK} packages.
+\end{itemize}
+
+
+\end{document}
+
