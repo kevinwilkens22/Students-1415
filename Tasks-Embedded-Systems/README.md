@@ -7,25 +7,25 @@ These tasks consist in installing and mastering pertinent software packages.
 Task 1: Necessary Software
 --------------------------
 *  C++ Development Tools
-*  CMake
-*  Integrated Development Environments
+*  [CMake](http://www.cmake.org/)
+*  Integrated Development Environments (optional)
 
 Task 2: Code Management System
 ------------------------------ 
-*  Source Code Management with Git
-*  GitHub
+*  Source Code Management with [Git](http://git-scm.com/)
+*  [GitHub](https://github.com/)
 
 Task 3: Microcontroller Software
 --------------------------------
-*  Arduino Prototyping Platform
+*  [Arduino](http://www.arduino.cc/) Prototyping Platform
 *  Teensy USB Development Board
 
 Task 4: Data Management
 -----------------------
-*  SQLite Database Engine
-*  Database Browser for SQLite (optional)
+*  [SQLite](http://www.sqlite.org/) Database Library/Engine
+*  Database [Browser](http://sqlitebrowser.org/) for SQLite (optional)
 
 Task 5: Data Visualization
 --------------------------------
-*  Qt Project
-*  QCustomPlot
+*  [Qt Project](http://qt-project.org/)
+*  [QCustomPlot](http://www.qcustomplot.com/)
